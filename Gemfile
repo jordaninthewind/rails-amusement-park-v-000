@@ -30,7 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'bootstrap-rails-flash'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
@@ -50,7 +50,7 @@ group :test, :development do
 end
 
 group :production do
-  gem "pg"
+
   gem "google-analytics-rails"
   gem "rails_12factor"
 end
