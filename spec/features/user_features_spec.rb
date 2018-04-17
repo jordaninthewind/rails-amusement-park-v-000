@@ -256,7 +256,7 @@ describe 'Feature Test: Go on a Ride', :type => :feature do
   it "when the user is too short and doesn't have enough tickets, clicking on 'Go on this ride' displays a detailed sorry message" do
     @user = User.find_by(:name => "Amy Poehler")
     @user.update_attribute(:tickets, 1)
-    @user.update_attribute(:height, 30)
+    @user.update_attribute( :height, 30)
     click_link('See attractions')
     click_link("Go on #{@rollercoaster.name}")
     click_button("Go on this ride")
